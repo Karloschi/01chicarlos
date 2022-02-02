@@ -1,0 +1,138 @@
+:root{
+    --white-text:#fff;
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    border: none;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(red, green, blue);
+    background: linear-gradient(90deg, rgb(174,58,180,1)0%,
+    rgba(63, 190, 251, 1)50%,
+    rgba(174,58,180,1)100%);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.card{
+    border-radius: 1rem;
+    box-shadow: 0 1rem 1rem rbga(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem;
+    overflow: hidden;
+    width: 25rem;
+    height: 35rem;
+    background-color: rgba(255,255,255,0.60);
+    backdrop-filter: blur(1rem);
+    color: var(--white-text);
+}
+
+.top-row{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-around;
+}
+
+.top-row i{
+    font-size: 4rem;
+}
+.content{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+
+.form.content i{
+    font-size: 2.5rem;
+}
+
+.form.content p{
+    font-size: .9rem;
+    align-self: flex-start;
+}
+
+.text{
+    width: 100%;
+    height: 3rem;
+    color: rbg(97,94,94);
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+
+.button{
+    border-radius: 3rem;
+    color: var(--white-text);
+    font-size: 1.2rem;
+    padding: .5rem .3rem;
+    letter-spacing:  .1rem;
+    background-color: rgba(172,58,188,.3);
+    width: 50%;
+
+}
+
+
+.networks{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 2rem;
+}
+
+@media(max-width:1030px){
+    .container{
+        height: auto;
+    }
+}
+
+p.centrado {
+    text-align: center;
+}
+
+a{
+    width: 100px;
+    height: 50px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    transition: all 0.2s ease 0s;
+    font-family: 'Raleway', Arial, Helvetica;
+    text-align: center;
+    border-bottom: 5px solid #250338;
+    border-radius: 12px;
+    box-shadow: 6px 6px 6px #999;
+    cursor: pointer;
+
+
+}
+a:hover{
+    background: #a60cff;
+}
+a:active {
+    box-shadow: 2px 2px 2px #777, 0px 0px 35px 0px #250338;
+    border-bottom:1px solid #250338;
+  text-shadow:  0px 0px 5px #fff, 0px 0px 5px #fff;
+    transform: translateY(4px);
+  transition: all 0.1s ease 0s;
+  margin: 80px auto 76px auto;
+}
+
